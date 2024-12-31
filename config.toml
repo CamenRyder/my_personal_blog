@@ -1,5 +1,5 @@
 title = "Đoàn Minh Hiếu"
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://camenryder.github.io/my_personal_blog/'
 languageCode = 'en-us'
 theme = "hugo-blog-awesome"
 
