@@ -1,0 +1,66 @@
+title = "Đoàn Minh Hiếu"
+baseURL = 'http://localhost:1313/'
+languageCode = 'en-us'
+theme = "hugo-blog-awesome"
+
+# To enable Google Analytics 4 (gtag.js) provide G-MEASUREMENT_ID below.
+# To disable  Google Analytics, simply leave the field empty or remove the next line
+googleAnalytics = '' # G-MEASUREMENT_ID
+
+
+# Enable emojis globally
+enableEmoji = true
+
+# set markup.highlight.noClasses=false to enable code highlight
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+  [[menu.main]] 
+    # The page reference (pageRef) is useful for menu highlighting
+    # When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
+    pageRef="/"
+    name = 'Trang chủ'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    pageRef="logs"
+    name = 'Bài viết'
+    url = '/logs/'
+    weight = 40
+  [[menu.main]]
+    pageRef="about"
+    name = 'Cá nhân'
+    url = '/about/'
+    weight = 30
+
+
+[params]
+  sitename = "Minh Hiếu"
+  defaultColor = "dark" # set default color mode: dark or light
+  description = "Minimal Hugo blog theme with light and dark mode support"
+
+[params.author]
+  avatar = "avatar.jpeg" # put the file in assets folder; also ensure that image has same height and width
+  # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
+  intro = "Minh Hiếu"
+  name = "Minh Hiếu"
+  description = "Đây là trang web cá nhân của CamenRyder. Nơi đây được dùng để chia sẻ những kiến thức hoặc kinh nghiệm cuộc sống. Thứ mà anh ta cảm thấy nó thú zị"
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/CamenRyder"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/minh-hieu-9a91b927b/"
+
+[[params.socialIcons]]
+name = "leetcode"
+url = "https://www.leetcode.com/dm2711/"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:mhieusz.23.dkc@gmail.com"
